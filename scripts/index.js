@@ -33,21 +33,50 @@
 // first()
 // console.log("ami sesh a achi")
 
-const a = 10; 
-const b = 20;
+// const a = 10; 
+// const b = 20;
 
 
-console.log("ami prothom")
+// console.log("ami prothom")
 
 
-fetch ("https://jsonplaceholder.typicode.com/todos/1")
-.then(res => res.json())
-.then(data => console.log(data))
+// fetch ("https://jsonplaceholder.typicode.com/todos/1")
+// .then(res => res.json())
+// .then(data => console.log(data))
 
-console.log("ami secend")
-const result = a + b;
-console.log(result)
+// console.log("ami secend")
+// const result = a + b;
+// console.log(result)
 
-// ata ekta function
+// // ata ekta function
 
-setTimeout ()
+// setTimeout ()
+
+
+
+// syncronus
+
+// const loadData = () => {
+//     console.log("ami first")
+//     console.log("ami secend")
+//     const result = 10 + 50;
+//     console.log(result)
+
+//     console.log("ami third")
+// }
+
+// loadData()
+
+// assien cronus
+
+const loadData = () =>{
+    console.log("ami first")
+     console.log("ami secend")
+     setTimeout (() => {
+        console.log("hi")
+     }, 3000)
+
+     console.log("ami third")
+}
+
+loadData()
